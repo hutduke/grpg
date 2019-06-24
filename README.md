@@ -1,2 +1,2 @@
 # grpg
-text-based RPG beginner project in python
+text-based RPG beginner project in python3
