@@ -2,6 +2,8 @@ import jobs
 import menus
 import sys
 
+#ailments = {'Poison': False}
+#player = {'Name': 'NULL0', 'Job': 'NULL0', 'Level': 0, 'Inventory': {'Gold': 0}}
 print ("Welcome to the world!")
 print ("Enter your name")
 name = input()
@@ -25,23 +27,23 @@ while selection == False:
 #open jobs.dat
 #find the necessary Job that is ==player_job
 #pjob = job(player_job)
-
+player_level = 1
 print ("Behold! A new era is dawning on the continent!")
 print ("The fresh hero", name + ", a mighty", player_job, "in the making")
 print ("is beginning their adventure! What wonderous deeds they shall lay")
 print ("a claim to, what legends their tale will give life!")
 
-print ("View skills? (Y/N)")
-answer=input()
+#print ("View skills? (Y/N)")
+#answer=input()
 #if answer.upper() == "Y":
     #for skill in pjob.skills:
     #   print (skill.description)
-if answer.upper() == "N":
-    print ("Okay!")
+#if answer.upper() == "N":
+#    print ("Okay!")
 print ("Press enter to continue")
 answer = input()
-print ("And so the hero looks like this:")
-print (name, player_job, "Lvl 1")
+print ("And so the new hero looks like this:")
+print (name, player_job, "Lvl", player_level)
 print ("May", name + "'s adventure by filled with glory and riches!")
 
 # pull up world map (town or dungeon)
@@ -57,24 +59,3 @@ while (selection == False):
     if (answer[0] == 'Q'):
         print ("And so the adventurer took a rest.")
         sys.exit()
-# town menu -> Inn, Smithy, Shop, Temple
-# Inn -> Rest, talk
-# Smithy -> Commission, Talk
-# Shop -> Buy, Sell, Talk
-# Temple -> Pray, Tithe
-
-# dungeon menu -> Venture forth
-
-# Inn - Rest: Recover HP and MP, cure ailments
-# Inn - Talk: Hear proprietor's rumors
-
-# Smithy - Commission: Have smith work with materials found in dungeon
-# Smithy - Talk: Hear smith's rumors
-
-# Shop - Buy/Sell: Self-explanatory
-# Shop - Talk: Hear shopkeep's rumors
-
-# Temple - Pray: Receive buff against evil magic for next venture
-# Temple - Tithe: Increases strength of prayer buff
-
-# Dungeon - the dungeon 
