@@ -1,0 +1,15 @@
+NAME = GOBLIN
+STATS = (2, 2, 2, 2, 2, 2)
+HP = 1
+MP = 0
+SKILLS = JEER
+EXP = 1
+END
+
+NAME = HOBGOBLIN
+STATS = (5, 5, 5, 5, 5, 5)
+HP = 10
+MP = 5
+SKILLS = SLAM, FIRE
+EXP = 10
+END

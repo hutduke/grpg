@@ -1,9 +1,9 @@
+import player
 import jobs
 import menus
+import battle
 import sys
 
-#ailments = {'Poison': False}
-#player = {'Name': 'NULL0', 'Job': 'NULL0', 'Level': 0, 'Inventory': {'Gold': 0}}
 print ("Welcome to the world!")
 print ("Enter your name")
 name = input()
@@ -26,7 +26,7 @@ while selection == False:
 #making an appropriate Object of the Job class
 #open jobs.dat
 #find the necessary Job that is ==player_job
-#pjob = job(player_job)
+#player.job = job(player_job)
 player_level = 1
 print ("Behold! A new era is dawning on the continent!")
 print ("The fresh hero", name + ", a mighty", player_job, "in the making")
@@ -45,6 +45,8 @@ answer = input()
 print ("And so the new hero looks like this:")
 print (name, player_job, "Lvl", player_level)
 print ("May", name + "'s adventure by filled with glory and riches!")
+
+
 
 # pull up world map (town or dungeon)
 selection = False

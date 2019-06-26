@@ -12,8 +12,7 @@ def town_menu():
 #easy menus, always use (Q) for return option in option_listing
 def master_menu(title, option_listing, submenus):
     print (title)
-    quitting = False
-    while quitting == False:
+    while True:
         print (option_listing)
         answer = input()
         answer = (answer.upper())[0]
@@ -21,8 +20,7 @@ def master_menu(title, option_listing, submenus):
             if answer == option:
                 callee()
             if answer == 'Q':
-                quitting = True
-                break
+                return
 
 def dungeon_menu():
     title = "The Ominious Dungeon"
